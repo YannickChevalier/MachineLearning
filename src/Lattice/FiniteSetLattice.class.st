@@ -7,7 +7,7 @@ Class {
 { #category : #accessing }
 FiniteSetLattice class >> bottom [
 	"Returns the bottom of the lattice, an empty set"
-	^ self new val: (Set new) ; yourself )
+	^ self new val: (Set new) ; yourself 
 ]
 
 { #category : #'instance creation' }
