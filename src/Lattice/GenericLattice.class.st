@@ -98,6 +98,12 @@ GenericLattice >> meet: x [
 	self subclassResponsibility 
 ]
 
+{ #category : #updating }
+GenericLattice >> update: anObject [
+	"Joins the value of the current object with the provided value"
+	val := (self \/ anObject) val
+]
+
 { #category : #accessing }
 GenericLattice >> val [
 
